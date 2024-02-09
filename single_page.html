@@ -51,7 +51,7 @@
             </details>
           </div>
 
-          <input placeholder="    Search for Item..." class="browse__string" type="text">
+          <input placeholder="Search for Item..." class="browse__string" type="text">
           <div class="button__search">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
@@ -60,7 +60,40 @@
       </div>
       <div class="cart">
         <div class="block__cart__img"><img class="cart__img" src="img/cart.png" alt="cart"></div>
-        <div class="block__button__account"><button class="button__account"><span class="account__text">My Account</span><i class="fa-solid fa-caret-down add__caret"></i></button></div>
+        <div class="block__button__account">
+            <details class="cart__menu">
+              <summary class="cart__block">
+                <a class="button__account">My Account<i class="fa-solid fa-caret-down add__caret"></i></a>
+              </summary>
+              <div class="cart__box">
+                  <div class="chose__product">
+                    <img class="photo__cart" src="img/chose_product_1.png" alt="chosen product 1">
+                    <div class="info__product__cart">
+                      <p class="name__product__cart">Rebox Zane</p>
+                      <i class="fa-solid fa-star"></i>
+                      <p class="price__and__quantity">1 x $250</p>
+                    </div>
+                    <i class="fa-solid fa-square-xmark"></i>
+                  </div>
+                  <div class="chose__product">
+                    <img class="photo__cart" src="img/chose_product_2.png" alt="chosen product 2">
+                    <div class="info__product__cart">
+                      <p class="name__product__cart">Rebox Zane</p>
+                      <i class="fa-solid fa-star"></i>
+                      <p class="price__and__quantity">1 x $250</p>
+                    </div>
+                    <i class="fa-solid fa-square-xmark"></i>
+                  </div>
+                  <div class="total__price__cart">
+                    <p class="text__cart__total">TOTAL</p>
+                    <p class="text__cart__total">$500.00</p>
+                  </div>
+                  <a class="button__checkout" href="#">Checkout</a>
+                  <a class="go__cart" href="#">Go to cart</a>
+              </div>
+              </summary>
+            </details>
+        </div>
       </div>
     </div>
 
@@ -304,16 +337,97 @@
   </section>
 
   <section class="info__products">
-    <div class="slider__products">
-      <img class="img__full__products" src="img/full_picture_products.png" alt="photo of products full">
-      <div class="block__with__info__products">
-        <h3>WOMEN COLLECTION</h3>
+    <div class="carousel">
+      <div class="carousel__left">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
+      <div class="slider__products">
+        <img class="img__full__products" src="img/full_picture_products.png" alt="photo of products full">
+        <div class="block__with__info__products">
+          <h3 class="title__collection">WOMEN COLLECTION</h3>
+          <div class="border__header__collection">
+            <span class="line__border__header__collection"></span>
+            <span class="line__border__header__collection__red"></span>
+            <span class="line__border__header__collection"></span>
+          </div>
+          <p class="header__group__collection">Moschino Cheap And Chic</p>
+          <p class="descr__collection">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate<br>collaborative architectures before cutting-edge services. Completely visualize parallel core competencies<br>rather than exceptional portals.</p>
+          <div class="content__producer">
+            <p class="text__content__producer">MATERIAL: <span class="text__content__producer__value">COTTON</span></p>
+            <p class="text__content__producer">DESIGNER: <span class="text__content__producer__value">BINBURHAN</span></p>
+          </div>
+          <p class="price__decr">$561</p>
+          <span class="border__center__box__collection"></span>
+          <form class="field__for__chosen">
+            <div class="title__with__field__product">
+              <label class="text__chosen" for="choose__color">CHOOSE COLOR</label>
+              <div class="field__for__chosen__color__icon">
+                <input class="field__for__chosen__product placeholder__color" placeholder="Red" type="text" id="choose__color">
+                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-square"></i>
+              </div>
+            </div>
+            <div class="title__with__field__product">
+              <label class="text__chosen" for="choose__size">CHOOSE SIZE</label>
+              <div class="field__for__chosen__size__icon">
+                <input class="field__for__chosen__product placeholder__size" placeholder="XXL" type="text" id="choose__size">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="title__with__field__product">
+              <label class="text__chosen" for="quantity">QUANTITY</label>
+              <input class="field__for__chosen__product placeholder__quantity" placeholder="2" type="text" id="choose__size">
+            </div>
+          </form>
+          <a class="button__add__cart" href="#"><i class="fa-solid fa-cart-plus"></i>Add to Cart</a>
+        </div>
+      </div>
+      <div class="carousel__right">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="block__for__add__more container">
+      <h2 class="title__additional__products">you may like also</h2>
+      <div class="products__addition">
+        <div class="item__additional__1">
+          <div class="image__box product__box">
+            <img class="img__item" src="img/additional_product_1.png" alt="item additional 1">
+          </div>
+          <h4 class="title__item">BLAZE LEGGINGS</h4>
+          <p class="price__item">$52.00</p>
+        </div>
+        <div class="item__additional__2">
+          <div class="image__box product__box">
+            <img class="img__item" img src="img/additional_product_2.png" alt="item 2">
+          </div>
+          <h4 class="title__item">ALEXA SWEATER</h4>
+          <p class="price__item">$52.00</p>
+        </div>
+        <div class="item__additional__3">
+          <div class="image__box product__box">
+            <img class="img__item" src="img/additional_product_3.png" alt="item 3">
+          </div>
+          <h4 class="title__item">AGNES TOP</h4>
+          <p class="price__item">$52.00</p>
+        </div>
+        <div class="item__additional__4">
+          <div class="image__box product__box">
+            <img class="img__item" src="img/additional_product_4.png" alt="item 4">
+          </div>
+          <h4 class="title__item">SYLVA SWEATER</h4>
+          <p class="price__item">$52.00</p>
+        </div>
       </div>
     </div>
   </section>
   
   <section>
     <div class="part__opinion">
+      <img class="image__fone__opinion" src="img/opacity.png" alt="fone">
       <div class="block__opinion container">
         <div class="client__opinion">
           <figure>
@@ -322,13 +436,18 @@
           <div>
             <p class="opinion__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<br>a pulvinar purus condimentum a. Aliquam condimentum<br>mattis neque sed pretium”</p>
             <p class="name__opinion">Bin Burhan<br><span class="name__opinion__add">Dhaka, Bd</span></p>
+            <div class="spoiler__opinion">
+              <span class="spoiler__block mr__spoiler__opinion"></span>
+              <span class="spoiler__block spoiler__pink mr__spoiler__opinion"></span>
+              <span class="spoiler__block"></span>
+            </div>
           </div>
         </div>
         <form class="block__subscribe">
           <h2 class="text__subscribe">Subscribe<br><span class="text__subscribe__add">FOR OUR NEWLETTER AND PROMOTION</span></h2>
           <div class="string__subscribe">
-            <input class="field__subscribe" type="text" placeholder="        Enter Your Email">
-            <button class="button__subscribe"><span class="text__button__subscribe">Subscribe</span></button>
+            <input class="field__subscribe" type="text" placeholder="Enter Your Email">
+            <a class="button__subscribe">Subscribe</a>
           </div>
         </form>
       </div>

@@ -60,7 +60,40 @@
       </div>
       <div class="cart">
         <div class="block__cart__img"><img class="cart__img" src="img/cart.png" alt="cart"></div>
-        <div class="block__button__account"><button class="button__account"><span class="account__text">My Account</span><i class="fa-solid fa-caret-down add__caret"></i></button></div>
+        <div class="block__button__account">
+            <details class="cart__menu">
+              <summary class="cart__block">
+                <a class="button__account">My Account<i class="fa-solid fa-caret-down add__caret"></i></a>
+              </summary>
+              <div class="cart__box">
+                  <div class="chose__product">
+                    <img class="photo__cart" src="img/chose_product_1.png" alt="chosen product 1">
+                    <div class="info__product__cart">
+                      <p class="name__product__cart">Rebox Zane</p>
+                      <i class="fa-solid fa-star"></i>
+                      <p class="price__and__quantity">1 x $250</p>
+                    </div>
+                    <i class="fa-solid fa-square-xmark"></i>
+                  </div>
+                  <div class="chose__product">
+                    <img class="photo__cart" src="img/chose_product_2.png" alt="chosen product 2">
+                    <div class="info__product__cart">
+                      <p class="name__product__cart">Rebox Zane</p>
+                      <i class="fa-solid fa-star"></i>
+                      <p class="price__and__quantity">1 x $250</p>
+                    </div>
+                    <i class="fa-solid fa-square-xmark"></i>
+                  </div>
+                  <div class="total__price__cart">
+                    <p class="text__cart__total">TOTAL</p>
+                    <p class="text__cart__total">$500.00</p>
+                  </div>
+                  <a class="button__checkout" href="#">Checkout</a>
+                  <a class="go__cart" href="#">Go to cart</a>
+              </div>
+              </summary>
+            </details>
+        </div>
       </div>
     </div>
 
@@ -424,6 +457,7 @@
 
   <section>
     <div class="part__opinion">
+      <img class="image__fone__opinion" src="img/opacity.png" alt="fone">
       <div class="block__opinion container">
         <div class="client__opinion">
           <figure>
@@ -432,13 +466,18 @@
           <div>
             <p class="opinion__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<br>a pulvinar purus condimentum a. Aliquam condimentum<br>mattis neque sed pretium”</p>
             <p class="name__opinion">Bin Burhan<br><span class="name__opinion__add">Dhaka, Bd</span></p>
+            <div class="spoiler__opinion">
+              <span class="spoiler__block mr__spoiler__opinion"></span>
+              <span class="spoiler__block spoiler__pink mr__spoiler__opinion"></span>
+              <span class="spoiler__block"></span>
+            </div>
           </div>
         </div>
         <form class="block__subscribe">
           <h2 class="text__subscribe">Subscribe<br><span class="text__subscribe__add">FOR OUR NEWLETTER AND PROMOTION</span></h2>
           <div class="string__subscribe">
             <input class="field__subscribe" type="text" placeholder="        Enter Your Email">
-            <button class="button__subscribe"><span class="text__button__subscribe">Subscribe</span></button>
+            <a class="button__subscribe">Subscribe</a>
           </div>
         </form>
       </div>
