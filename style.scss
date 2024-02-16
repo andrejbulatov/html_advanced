@@ -1,4 +1,6 @@
 @import 'product';
+@import 'cart';
+@import 'checkout';
 $mainColor: #222222;
 $addColor: #f16d7f;
 
@@ -272,6 +274,11 @@ header {
   padding-top: 17px;
 }
 
+.button__checkout:hover {
+  background-color: $addColor;
+  color: #FFF;
+}
+
 .go__cart {
   font-family: Lato;
   font-size: 14px;
@@ -286,6 +293,12 @@ header {
   text-decoration: none;
   text-align: center;
   padding-top: 17px;
+}
+
+.go__cart:hover {
+  background-color: $addColor;
+  border: 1px solid $addColor;
+  color: #FFF;
 }
 
 .main__offer {
