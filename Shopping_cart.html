@@ -50,49 +50,53 @@
               </summary>
             </details>
           </div>
-
-          <input placeholder="Search for Item..." class="browse__string" type="text">
-          <div class="button__search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
+          <form action="" class="form__search">
+            <input placeholder="Search for Item..." class="browse__string" type="text">
+            <button class="button__search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
         </div>
-        
       </div>
       <div class="cart">
-        <div class="block__cart__img"><img class="cart__img" src="img/cart.png" alt="cart"></div>
-        <div class="block__button__account">
-            <details class="cart__menu">
-              <summary class="cart__block">
-                <a class="button__account">My Account<i class="fa-solid fa-caret-down add__caret"></i></a>
-              </summary>
-              <div class="cart__box">
-                  <div class="chose__product">
+        <div class="block__cart__img">
+          <details class="cart__menu">
+            <summary class="cart__block">
+              <img class="cart__img" src="img/cart.png" alt="cart">
+            </summary>
+            <div class="cart__box">
+                <div class="chose__product">
+                  <a class="img__cart__link" href="single_page.html">
                     <img class="photo__cart" src="img/chose_product_1.png" alt="chosen product 1">
-                    <div class="info__product__cart">
-                      <p class="name__product__cart">Rebox Zane</p>
-                      <i class="fa-solid fa-star"></i>
-                      <p class="price__and__quantity">1 x $250</p>
-                    </div>
-                    <i class="fa-solid fa-square-xmark"></i>
+                  </a>
+                  <div class="info__product__cart">
+                    <a class="name__product__cart__link" href="single_page.html"><p class="name__product__cart">Rebox Zane</p></a>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="price__and__quantity">1 x $250</p>
                   </div>
-                  <div class="chose__product">
+                  <i class="fa-solid fa-square-xmark"></i>
+                </div>
+                <div class="chose__product">
+                  <a class="img__cart__link" href="single_page.html">
                     <img class="photo__cart" src="img/chose_product_2.png" alt="chosen product 2">
-                    <div class="info__product__cart">
-                      <p class="name__product__cart">Rebox Zane</p>
-                      <i class="fa-solid fa-star"></i>
-                      <p class="price__and__quantity">1 x $250</p>
-                    </div>
-                    <i class="fa-solid fa-square-xmark"></i>
+                  </a>
+                  <div class="info__product__cart">
+                    <a class="name__product__cart__link" href="single_page.html"><p class="name__product__cart">Rebox Zane</p></a>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="price__and__quantity">1 x $250</p>
                   </div>
-                  <div class="total__price__cart">
-                    <p class="text__cart__total">TOTAL</p>
-                    <p class="text__cart__total">$500.00</p>
-                  </div>
-                  <a class="button__checkout" href="checkout.html">Checkout</a>
-                  <a class="go__cart" href="Shopping_cart.html">Go to cart</a>
-              </div>
-              </summary>
-            </details>
+                  <i class="fa-solid fa-square-xmark"></i>
+                </div>
+                <div class="total__price__cart">
+                  <p class="text__cart__total">TOTAL</p>
+                  <p class="text__cart__total">$500.00</p>
+                </div>
+                <a class="button__checkout" href="checkout.html">Checkout</a>
+                <a class="go__cart" href="Shopping_cart.html">Go to cart</a>
+            </div>
+            </summary>
+          </details>
+        </div>
+        <div class="block__button__account">
+          <a class="button__account">My Account<i class="fa-solid fa-caret-down add__caret"></i></a>
         </div>
       </div>
     </div>
@@ -323,7 +327,7 @@
     </div>
   </nav>
 
-  <section class="breadcrumbs">
+  <nav class="breadcrumbs">
     <div class="arrivals__header container">
       <h1 class="title__arrivals">New Arrivals</h1>
       <div class="link__breadcrumbs">
@@ -334,16 +338,16 @@
         <a class="text__link__breadcrumbs__red" href="#">New Arrivals</a>
       </div>
     </div>
-  </section>
+  </nav>
 
   <section class="cart__page">
     <div class="cart__page__block container">
       <div class="cart__page__block__product__details">
         <h3 class="cart__page__title__text">Product Details</h3>
         <div class="cart__page__block__product__details__info">
-          <img class="img__cart__pic" src="img/img_cart_1.png" alt="picture in cart">
+          <a href="single_page.html"><img class="img__cart__pic" src="img/img_cart_1.png" alt="picture in cart"></a>
           <div class="cart__page__block__product__details__info__text">
-            <h4 class="cart__product__title">Mango People T-shirt</h4>
+            <a class="cart__product__title__link" href="single_page.html"><h4 class="cart__product__title">Mango People T-shirt</h4></a>
             <div class="box__cart__product">
               <p class="cart__product__parameters">Color: <span class="cart__product__parameters__value__parameter">Red</span></p>
               <p class="cart__product__parameters">Size: <span class="cart__product__parameters__value__parameter">Xll</span></p>
@@ -351,9 +355,9 @@
           </div>
         </div>
         <div class="cart__page__block__product__details__info">
-          <img class="img__cart__pic" src="img/img_cart_2.png" alt="picture in cart">
+          <a href="single_page.html"><img class="img__cart__pic" src="img/img_cart_2.png" alt="picture in cart"></a>
           <div class="cart__page__block__product__details__info__text">
-            <h4 class="cart__product__title">Mango People T-shirt</h4>
+            <a class="cart__product__title__link" href="single_page.html"><h4 class="cart__product__title">Mango People T-shirt</h4></a>
             <i class="fa-solid fa-star"></i>
             <div class="box__cart__product">
               <p class="cart__product__parameters">Color: <span class="cart__product__parameters__value__parameter">Red</span></p>
@@ -362,9 +366,9 @@
           </div>
         </div>
         <div class="cart__page__block__product__details__info">
-          <img class="img__cart__pic" src="img/img_cart_3.png" alt="picture in cart">
+          <a href="single_page.html"><img class="img__cart__pic" src="img/img_cart_3.png" alt="picture in cart"></a>
           <div class="cart__page__block__product__details__info__text">
-            <h4 class="cart__product__title">Mango People T-shirt</h4>
+            <a class="cart__product__title__link" href="single_page.html"><h4 class="cart__product__title">Mango People T-shirt</h4></a>
             <div class="box__cart__product">
               <p class="cart__product__parameters">Color: <span class="cart__product__parameters__value__parameter">Red</span></p>
               <p class="cart__product__parameters">Size: <span class="cart__product__parameters__value__parameter">Xll</span></p>
@@ -387,13 +391,13 @@
       <div class="cart__page__block__details">
         <h3 class="cart__page__title__text">Quantity</h3>
         <div class="cart__page__block__details__line">
-          <input class="field__quantity" type="text" placeholder="2">
+          <input class="field__quantity" type="number" min="1" placeholder="2">
         </div>
         <div class="cart__page__block__details__line">
-          <input class="field__quantity" type="text" placeholder="2">
+          <input class="field__quantity" type="number" min="1" placeholder="2">
         </div>
         <div class="cart__page__block__details__line">
-          <input class="field__quantity" type="text" placeholder="2">
+          <input class="field__quantity" type="number" min="1" placeholder="2">
         </div>
       </div>
       <div class="cart__page__block__details">
@@ -438,20 +442,25 @@
       <a class="button__clear__go__on" href="#">cONTINUE sHOPPING</a>
     </div>
     <div class="shipping__info container">
-      <div class="shipping__info__address">
+      <form class="shipping__info__address">
         <h2 class="shipping__info__address__title">Shipping Adress</h2>
         <div class="list__address">
-          <input class="input__address" placeholder="Bangladesh" type="text"><i class="fa-solid fa-caret-down position__caret__proceed"></i>
+          <select id="input__address" class="input__address__add" placeholder="Bangladesh" type="text">
+            <option value="">Bangladesh</option>
+            <option value="">India</option>
+            <option value="">China</option>
+          </select>
         </div>
         <input class="input__address" placeholder="State" type="text">
         <input class="input__address" placeholder="Postcode / Zip" type="text">
-      </div>
-      <div class="shipping__info__address">
+        <button class="button__get__quote" type="submit">get a quote</button>
+      </form>
+      <form class="shipping__info__address">
         <h2 class="shipping__info__address__title">coupon  discount</h2>
         <label class="disc__coupon" for="input__address">Enter your coupon code if you have one</label>
         <input class="input__address" placeholder="State" type="text">
-        <a class="button__apply__coupon" href="#">Apply coupon</a>
-      </div>
+        <button class="button__apply__coupon" type="submit">Apply coupon</button>
+      </form>
       <div class="box__proceed">
         <div class="box__proceed__info">
           <div class="box__proceed__text">
@@ -469,12 +478,9 @@
   
       </div>
     </div>
-    <div class="box__button__get__quote container">
-      <a class="button__get__quote" href="#">get a quote</a>
-    </div>
   </section>
   
-  <section>
+  <section class="section__opinion">
     <div class="part__opinion">
       <img class="image__fone__opinion" src="img/opacity.png" alt="fone">
       <div class="block__opinion container">
@@ -495,8 +501,8 @@
         <form class="block__subscribe">
           <h2 class="text__subscribe">Subscribe<br><span class="text__subscribe__add">FOR OUR NEWLETTER AND PROMOTION</span></h2>
           <div class="string__subscribe">
-            <input class="field__subscribe" type="text" placeholder="Enter Your Email">
-            <a class="button__subscribe">Subscribe</a>
+            <input class="field__subscribe" type="email" placeholder="Enter Your Email">
+            <button class="button__subscribe" type="submit">Subscribe</button>
           </div>
         </form>
       </div>
@@ -513,30 +519,30 @@
         <p class="desc__company mb__desc__company">Objectively transition extensive data rather than cross functional<br>solutions. Monotonectally syndicate multidisciplinary materials<br>before go forward benefits. Intrinsicly syndicate an expanded array<br>of processes and cross-unit partnerships.</p>
         <p class="desc__company">Efficiently plagiarize 24/365 action items and focused infomediaries.<br>Distinctively seize superior initiatives for wireless technologies.<br>Dynamically optimize.</p>
       </div>
-      <div class="link__column company__link">
+      <nav class="link__column company__link">
         <h3 class="contacts__title">COMPANY</h3>
         <a class="link__contacts" href="index.html">Home</a>
         <a class="link__contacts" href="#">Shop</a>
         <a class="link__contacts" href="#">About</a>
         <a class="link__contacts" href="#">How It Works</a>
         <a class="link__contacts" href="#">Contact</a>
-      </div>
-      <div class="link__column information__link">
+      </nav>
+      <nav class="link__column information__link">
         <h3 class="contacts__title">INFORMATION</h3>
         <a class="link__contacts" href="#">Tearms & Condition</a>
         <a class="link__contacts" href="#">Privacy Policy</a>
         <a class="link__contacts" href="#">How to Buy</a>
         <a class="link__contacts" href="#">How to Sell</a>
         <a class="link__contacts" href="#">Promotion</a>
-      </div>
-      <div class="link__column">
+      </nav>
+      <nav class="link__column">
         <h3 class="contacts__title">SHOP CATEGORY</h3>
         <a class="link__contacts" href="#">Men</a>
         <a class="link__contacts" href="#">Women</a>
         <a class="link__contacts" href="#">Child</a>
         <a class="link__contacts" href="#">Apparel</a>
         <a class="link__contacts" href="#">Brows All</a>
-      </div>
+      </nav>
 
     </div>
     <div class="social__net">

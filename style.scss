@@ -51,18 +51,36 @@ header {
 }
 
 .button__browse {
-  height: 38px;
-  background-color: #cdcdcc;
   background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%);
+  background-color: #cdcdcc;
   border: 1px solid #e6e6e6;
   border-radius: 3px 0px 0px 3px;
   position: relative;
-  padding: 9px 10px 9px 10px;
+  padding: 9px 10px 10px 10px;
   font-family: Lato;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.025em;
   color: $mainColor;
+}
+
+.img__cart__link:hover .photo__cart {
+  filter: brightness(30%);
+}
+
+.button__browse:hover {
+  background-image: none;
+  background-color: #FFF;
+}
+
+.button__account:hover {
+  background-color: #FFF;
+  color: $addColor;
+  border: 1px solid $addColor;
+}
+
+.button__account:hover .add__caret {
+  color: $addColor;
 }
 
 .menu__browse {
@@ -102,6 +120,10 @@ header {
     }
 }
 
+.form__search {
+  display: flex;
+}
+
 .browse__string {
   width: 279px;
   height: 38px;
@@ -109,6 +131,11 @@ header {
   border: 1px solid #e6e6e6;
   border-left: none;
   border-right: none;
+  padding: 18px 22px;
+}
+
+.img__menu:hover {
+  box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.25);
 }
 
 .browse__string::placeholder {
@@ -118,7 +145,6 @@ header {
   font-weight: 300;
   letter-spacing: 0.025em;
   color: #a4a4a4;
-  padding-left: 16px;
 }
 
 .button__search {
@@ -149,13 +175,13 @@ header {
 .cart__box {
   display: flex;
   flex-direction: column;
-  width: 262px;
+  width: 272px;
   height: 440px;
   background-color: #ffffff;
   border-radius: 5px;
   position: absolute;
   top: 54px;
-  left: -66px;
+  left: -16px;
   z-index: 10000;
   padding: 21px 16px 20px 17px;
 }
@@ -172,9 +198,9 @@ header {
   font-weight: 400;
   letter-spacing: 0.025em;
   color: #ffffff;
-  padding: 1px 13px 21px 19px;
+  padding: 7px 20px 11px 19px;
   background-color: $addColor;
-
+  border: 1px solid $addColor;
 }
 
 .cart__block {
@@ -185,6 +211,10 @@ header {
 .block__cart__img {
   margin-top: 40px;
   margin-right: 26px;
+}
+.cart__img {
+  width: 32px;
+  height: 29px;
 }
 
 .block__button__account {
@@ -305,6 +335,7 @@ header {
   background-color: #e8e8e8;
   margin-bottom: 98px;
   position: relative;
+  height: 613px;
 }
 
 .menu {
@@ -444,19 +475,16 @@ header {
   color: #ffffff;
 }
 
-.img__offer {
-  position: relative;
-}
-
-.main__img__offer {
-  max-width: 96%;
+.img__offer__box {
+  background: url(img/banner.jpg);
+  height: 100%;
+  padding-right: 50px;
 }
   
 .block__text__offer {
-  position: absolute;
-  padding-top: 276px;
   padding-left: calc(50% - 570px);
   display: flex;
+  padding-top: 276px;
 }
 
 .line__for__header {
@@ -1025,6 +1053,12 @@ header {
   background-color: #ffffff;
   border: 1px solid #eaeaea;
   margin-bottom: 28px;
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #bcbcbc;
+  padding-left: 15px;
 }
 
 .placeholder__color::placeholder {
@@ -1088,7 +1122,6 @@ header {
   border: 1px solid #ef5b70;
   text-decoration: none;
   text-align: center;
-  padding-top: 17px;
 }
 
 .fa-cart-plus {
@@ -1122,27 +1155,37 @@ header {
 }
 
 .part__opinion {
-  background-image: url(img/background_opinion.png);
+  background: url(img/background_opinion.png);
+  background-repeat: no-repeat;
   background-size: cover;
-  min-height: 438px;
+  background-position: bottom;
+  height: 438px;
 }
 
 .block__opinion {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 570px);
+  width: 100%;
+  height: 100%;
+}
+
+.section__opinion {
   position: relative;
 }
 
 .image__fone__opinion {
-  position: absolute;
-  min-width: 96%;
   background-color: rgba(242,242,242,0.5);
-  height: 438px;
+  height: 100%;
+  width: 100%;
 }
 
 .client__opinion {
   width: 50%;
   padding-top: 111px;
   display: flex;
+  border-right: 1px solid #FFF;
 }
 
 .photo__opinion {
@@ -1197,6 +1240,7 @@ header {
   display: flex;
   flex-direction: column;
   padding-top: 148px;
+  width: 50%;
 }
 
 .text__subscribe {
@@ -1225,6 +1269,7 @@ header {
   background-color: #e1e1e1;
   border-radius: 23px 0 0 23px;
   border: none;
+  padding: 18px 22px;
 }
 
 .field__subscribe::placeholder {
@@ -1250,7 +1295,6 @@ header {
   letter-spacing: 0.025em;
   color: #ffffff;
   text-align: center;
-  padding-top: 13px;
 }
 
 .button__subscribe:hover {
@@ -1263,6 +1307,10 @@ header {
   display: flex;
   padding-top: 109px;
   padding-bottom: 89px;
+}
+
+.spoiler__block:hover {
+ background-color: $addColor;
 }
 
 .about__company {
@@ -1370,6 +1418,21 @@ header {
   fill: #FFF;
 }
 
+.carousel__left:hover .fa-chevron-left {
+  color: $addColor;
+}
+
+.carousel__right:hover .fa-chevron-right {
+  color: $addColor;
+}
+
+.name__product__cart__link {
+  text-decoration: none;
+}
+
+.name__product__cart:hover {
+  color: $addColor;
+}
 
 
 

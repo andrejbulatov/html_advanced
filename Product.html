@@ -50,49 +50,53 @@
               </summary>
             </details>
           </div>
-
-          <input placeholder="Search for Item..." class="browse__string" type="text">
-          <div class="button__search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
+          <form action="" class="form__search">
+            <input placeholder="Search for Item..." class="browse__string" type="text">
+            <button class="button__search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
         </div>
-        
       </div>
       <div class="cart">
-        <div class="block__cart__img"><img class="cart__img" src="img/cart.png" alt="cart"></div>
-        <div class="block__button__account">
-            <details class="cart__menu">
-              <summary class="cart__block">
-                <a class="button__account">My Account<i class="fa-solid fa-caret-down add__caret"></i></a>
-              </summary>
-              <div class="cart__box">
-                  <div class="chose__product">
+        <div class="block__cart__img">
+          <details class="cart__menu">
+            <summary class="cart__block">
+              <img class="cart__img" src="img/cart.png" alt="cart">
+            </summary>
+            <div class="cart__box">
+                <div class="chose__product">
+                  <a class="img__cart__link" href="single_page.html">
                     <img class="photo__cart" src="img/chose_product_1.png" alt="chosen product 1">
-                    <div class="info__product__cart">
-                      <p class="name__product__cart">Rebox Zane</p>
-                      <i class="fa-solid fa-star"></i>
-                      <p class="price__and__quantity">1 x $250</p>
-                    </div>
-                    <i class="fa-solid fa-square-xmark"></i>
+                  </a>
+                  <div class="info__product__cart">
+                    <a class="name__product__cart__link" href="single_page.html"><p class="name__product__cart">Rebox Zane</p></a>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="price__and__quantity">1 x $250</p>
                   </div>
-                  <div class="chose__product">
+                  <i class="fa-solid fa-square-xmark"></i>
+                </div>
+                <div class="chose__product">
+                  <a class="img__cart__link" href="single_page.html">
                     <img class="photo__cart" src="img/chose_product_2.png" alt="chosen product 2">
-                    <div class="info__product__cart">
-                      <p class="name__product__cart">Rebox Zane</p>
-                      <i class="fa-solid fa-star"></i>
-                      <p class="price__and__quantity">1 x $250</p>
-                    </div>
-                    <i class="fa-solid fa-square-xmark"></i>
+                  </a>
+                  <div class="info__product__cart">
+                    <a class="name__product__cart__link" href="single_page.html"><p class="name__product__cart">Rebox Zane</p></a>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="price__and__quantity">1 x $250</p>
                   </div>
-                  <div class="total__price__cart">
-                    <p class="text__cart__total">TOTAL</p>
-                    <p class="text__cart__total">$500.00</p>
-                  </div>
-                  <a class="button__checkout" href="checkout.html">Checkout</a>
-                  <a class="go__cart" href="Shopping_cart.html">Go to cart</a>
-              </div>
-              </summary>
-            </details>
+                  <i class="fa-solid fa-square-xmark"></i>
+                </div>
+                <div class="total__price__cart">
+                  <p class="text__cart__total">TOTAL</p>
+                  <p class="text__cart__total">$500.00</p>
+                </div>
+                <a class="button__checkout" href="checkout.html">Checkout</a>
+                <a class="go__cart" href="Shopping_cart.html">Go to cart</a>
+            </div>
+            </summary>
+          </details>
+        </div>
+        <div class="block__button__account">
+          <a class="button__account">My Account<i class="fa-solid fa-caret-down add__caret"></i></a>
         </div>
       </div>
     </div>
@@ -323,7 +327,7 @@
     </div>
   </nav>
 
-  <section class="breadcrumbs">
+  <nav class="breadcrumbs">
     <div class="arrivals__header container">
       <h1 class="title__arrivals">New Arrivals</h1>
       <div class="link__breadcrumbs">
@@ -334,10 +338,10 @@
         <a class="text__link__breadcrumbs__red" href="#">New Arrivals</a>
       </div>
     </div>
-  </section>
+  </nav>
 
   <section class="box__for__filter container">
-    <div class="filter">
+    <nav class="filter">
       <details open>
         <summary class="filter__point">
           <div class="filter__box">
@@ -416,7 +420,7 @@
               <a href="#" class="category-link">Tanks</a>    
             </div>
       </details>
-    </div>
+    </nav>
     <div class="results">
       <div class="quick__search">
         <div class="quick__search__trend box__for__search">
@@ -468,25 +472,30 @@
             </label>
           </form>
         </div>
-        <div class="quick__search__price box__for__search">
-          <h3 class="search__title">pRICE</h3>
-          <input class="range__search" type="range" min="$52" max="$400" value="13" step="10" />
-          <div class="range__prices">
-            <p class="title__price__range">$52</p>
-            <p class="title__price__range">$400</p>
+        <form class="quick__search__price box__for__search" oninput="result__range.value=(range__price.value)" action="#">
+          <label for="range__price" class="search__title range__title">pRICE</label><br>
+          <div class="box__range">
+            <input id="range__price" class="range__search" type="range" min="10" max="500" value="52" step="10"/>
+            <p class="text__result__range">$<output name="result__range" for="range__price">52</output></p>
           </div>
-        </div>
+        </form>
       </div>
       <div class="sorting">
         <form class="sort__by" action="">
           <input class="field__sortby placeholder__sortby" placeholder="Sort By" type="text">
-          <input class="field__name placeholder__search__name" placeholder="Name" type="text">
-          <i class="fa-solid fa-caret-down position__caret__down"></i>
+          <select class="field__name placeholder__search__name" placeholder="Name" type="text">
+            <option class="placeholder__search__name" value="">Name</option>
+						<option class="placeholder__search__name" value="">Name</option>
+						<option class="placeholder__search__name" value="">Name</option>
+          </select>
         </form>
         <form class="sort__by" action="">
           <input class="field__sortby placeholder__sortby" placeholder="Show" type="text">
-          <input class="field__name placeholder__search__name" placeholder="09" type="text">
-          <i class="fa-solid fa-caret-down position__caret__down"></i>
+          <select class="field__name placeholder__search__name" placeholder="09" type="text">
+            <option value="">9</option>
+						<option value="">12</option>
+						<option value="">15</option>
+          </select>
         </form>
       </div>
       <div class="result__product">
@@ -502,6 +511,14 @@
                 <p class="add-txt">Add to Cart</p>
             </a>
           </div>
+          <div class="add-opinion-repeat">
+            <a href="#" class="add__repeat">
+              <img src="img/repeat.png" alt="repeat">
+            </a>
+            <a href="#" class="add__opinion">
+              <img src="img/opinion.png" alt="opinion">
+            </a>
+          </div>
         </div>
         <div class="item mb__item">
           <a class="items-link" href="single_page.html">
@@ -513,6 +530,14 @@
             <a href="Shopping_cart.html" class="add__cart">
                 <img src="img/cart-add.svg" alt="cart">
                 <p class="add-txt">Add to Cart</p>
+            </a>
+          </div>
+          <div class="add-opinion-repeat">
+            <a href="#" class="add__repeat">
+              <img src="img/repeat.png" alt="repeat">
+            </a>
+            <a href="#" class="add__opinion">
+              <img src="img/opinion.png" alt="opinion">
             </a>
           </div>
         </div>
@@ -528,6 +553,14 @@
                 <p class="add-txt">Add to Cart</p>
             </a>
           </div>
+          <div class="add-opinion-repeat">
+            <a href="#" class="add__repeat">
+              <img src="img/repeat.png" alt="repeat">
+            </a>
+            <a href="#" class="add__opinion">
+              <img src="img/opinion.png" alt="opinion">
+            </a>
+          </div>
         </div>
         <div class="item mb__item">
           <a class="items-link" href="single_page.html">
@@ -539,6 +572,14 @@
             <a href="Shopping_cart.html" class="add__cart">
                 <img src="img/cart-add.svg" alt="cart">
                 <p class="add-txt">Add to Cart</p>
+            </a>
+          </div>
+          <div class="add-opinion-repeat">
+            <a href="#" class="add__repeat">
+              <img src="img/repeat.png" alt="repeat">
+            </a>
+            <a href="#" class="add__opinion">
+              <img src="img/opinion.png" alt="opinion">
             </a>
           </div>
         </div>
@@ -554,6 +595,14 @@
                 <p class="add-txt">Add to Cart</p>
             </a>
           </div>
+          <div class="add-opinion-repeat">
+            <a href="#" class="add__repeat">
+              <img src="img/repeat.png" alt="repeat">
+            </a>
+            <a href="#" class="add__opinion">
+              <img src="img/opinion.png" alt="opinion">
+            </a>
+          </div>
         </div>
         <div class="item mb__item">
           <a class="items-link" href="single_page.html">
@@ -565,6 +614,14 @@
             <a href="Shopping_cart.html" class="add__cart">
                 <img src="img/cart-add.svg" alt="cart">
                 <p class="add-txt">Add to Cart</p>
+            </a>
+          </div>
+          <div class="add-opinion-repeat">
+            <a href="#" class="add__repeat">
+              <img src="img/repeat.png" alt="repeat">
+            </a>
+            <a href="#" class="add__opinion">
+              <img src="img/opinion.png" alt="opinion">
             </a>
           </div>
         </div>
@@ -580,6 +637,14 @@
                 <p class="add-txt">Add to Cart</p>
             </a>
           </div>
+          <div class="add-opinion-repeat">
+            <a href="#" class="add__repeat">
+              <img src="img/repeat.png" alt="repeat">
+            </a>
+            <a href="#" class="add__opinion">
+              <img src="img/opinion.png" alt="opinion">
+            </a>
+          </div>
         </div>
         <div class="item mb__item">
           <a class="items-link" href="single_page.html">
@@ -592,6 +657,14 @@
                 <img src="img/cart-add.svg" alt="cart">
                 <p class="add-txt">Add to Cart</p>
             </a>
+        </div>
+        <div class="add-opinion-repeat">
+          <a href="#" class="add__repeat">
+            <img src="img/repeat.png" alt="repeat">
+          </a>
+          <a href="#" class="add__opinion">
+            <img src="img/opinion.png" alt="opinion">
+          </a>
         </div>
         </div>
         <div class="item mb__item">
@@ -606,10 +679,18 @@
                 <p class="add-txt">Add to Cart</p>
             </a>
           </div>
+          <div class="add-opinion-repeat">
+            <a href="#" class="add__repeat">
+              <img src="img/repeat.png" alt="repeat">
+            </a>
+            <a href="#" class="add__opinion">
+              <img src="img/opinion.png" alt="opinion">
+            </a>
+          </div>
         </div>
     </div>
     <div class="result__in__common">
-      <div class="pagination">
+      <nav class="pagination">
         <i class="fa-solid fa-circle-chevron-left"></i>
         <p class="pagination__text__red">1</p>
         <p class="pagination__text">2</p>
@@ -620,7 +701,7 @@
         <p class="pagination__text">.....</p>
         <p class="pagination__text">20</p>
         <i class="fa-solid fa-circle-chevron-right"></i>
-      </div>
+      </nav>
       <div>
         <a class="button__view__all" href="#">View All</a>
       </div>
@@ -659,7 +740,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="section__opinion">
     <div class="part__opinion">
       <img class="image__fone__opinion" src="img/opacity.png" alt="fone">
       <div class="block__opinion container">
@@ -680,8 +761,8 @@
         <form class="block__subscribe">
           <h2 class="text__subscribe">Subscribe<br><span class="text__subscribe__add">FOR OUR NEWLETTER AND PROMOTION</span></h2>
           <div class="string__subscribe">
-            <input class="field__subscribe" type="text" placeholder="Enter Your Email">
-            <a class="button__subscribe">Subscribe</a>
+            <input class="field__subscribe" type="email" placeholder="Enter Your Email">
+            <button class="button__subscribe" type="submit">Subscribe</button>
           </div>
         </form>
       </div>
@@ -698,30 +779,30 @@
         <p class="desc__company mb__desc__company">Objectively transition extensive data rather than cross functional<br>solutions. Monotonectally syndicate multidisciplinary materials<br>before go forward benefits. Intrinsicly syndicate an expanded array<br>of processes and cross-unit partnerships.</p>
         <p class="desc__company">Efficiently plagiarize 24/365 action items and focused infomediaries.<br>Distinctively seize superior initiatives for wireless technologies.<br>Dynamically optimize.</p>
       </div>
-      <div class="link__column company__link">
+      <nav class="link__column company__link">
         <h3 class="contacts__title">COMPANY</h3>
         <a class="link__contacts" href="index.html">Home</a>
         <a class="link__contacts" href="#">Shop</a>
         <a class="link__contacts" href="#">About</a>
         <a class="link__contacts" href="#">How It Works</a>
         <a class="link__contacts" href="#">Contact</a>
-      </div>
-      <div class="link__column information__link">
+      </nav>
+      <nav class="link__column information__link">
         <h3 class="contacts__title">INFORMATION</h3>
         <a class="link__contacts" href="#">Tearms & Condition</a>
         <a class="link__contacts" href="#">Privacy Policy</a>
         <a class="link__contacts" href="#">How to Buy</a>
         <a class="link__contacts" href="#">How to Sell</a>
         <a class="link__contacts" href="#">Promotion</a>
-      </div>
-      <div class="link__column">
+      </nav>
+      <nav class="link__column">
         <h3 class="contacts__title">SHOP CATEGORY</h3>
         <a class="link__contacts" href="#">Men</a>
         <a class="link__contacts" href="#">Women</a>
         <a class="link__contacts" href="#">Child</a>
         <a class="link__contacts" href="#">Apparel</a>
         <a class="link__contacts" href="#">Brows All</a>
-      </div>
+      </nav>
 
     </div>
     <div class="social__net">

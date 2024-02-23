@@ -80,6 +80,18 @@
   margin-right: 21px;
 }
 
+.img__cart__pic:hover {
+  filter: brightness(30%);
+}
+
+.cart__product__title__link {
+  text-decoration: none;
+}
+
+.cart__product__title:hover {
+  color: #ef5b70;
+}
+
 .cart__product__title {
   font-family: Lato;
   font-size: 13px;
@@ -147,6 +159,7 @@
   background-color: #ffffff;
   border: 1px solid #eaeaea;
   margin-left: 6px;
+  padding-left: 22px;
 }
 
 .field__quantity::placeholder {
@@ -155,7 +168,6 @@
   line-height: 20px;
   font-weight: 400;
   color: #656565;
-  padding-left: 22px;
 }
 
 .fa-circle-xmark {
@@ -206,6 +218,19 @@
   height: 45px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
+}
+
+.input__address__add {
+  width: 355px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #b1b1b1;
+  padding-left: 15px;
 }
 
 .shipping__info__address__title {
@@ -335,6 +360,7 @@
   background-color: #ffffff;
   border: 1px solid #eaeaea;
   text-decoration: none;
+  width: 112px;
 }
 
 .button__get__quote:hover {
